@@ -1,0 +1,74 @@
+\hypertarget{class_game_1_1_pieces_1_1_pawn}{}\section{Game.\+Pieces.\+Pawn Class Reference}
+\label{class_game_1_1_pieces_1_1_pawn}\index{Game.\+Pieces.\+Pawn@{Game.\+Pieces.\+Pawn}}
+Inheritance diagram for Game.\+Pieces.\+Pawn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_pieces_1_1_pawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_1_1_pieces_1_1_pawn_aaa1f423adede7444520459ea607f0f36}{Pawn} (int X, int Y, int c, \hyperlink{class_game_1_1_player}{Player} owner)
+\item 
+Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$ \hyperlink{class_game_1_1_pieces_1_1_pawn_ae017bf02eaa2725e81b3e090570621ce}{explore\+\_\+possible\+\_\+positions} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{class_game_1_1_pieces_1_1_pawn_adf35b286f0743f944785fc916cdea79b}{move} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_location}{Location} destination, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_pieces_1_1_pawn_aaa1f423adede7444520459ea607f0f36}\label{class_game_1_1_pieces_1_1_pawn_aaa1f423adede7444520459ea607f0f36}} 
+\index{Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{Pawn()}{Pawn()}}
+{\footnotesize\ttfamily Game.\+Pieces.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{c,  }\item[{\hyperlink{class_game_1_1_player}{Player}}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em c} & color of piece. \\
+\hline
+{\em X} & X coordinate. \\
+\hline
+{\em Y} & y coordinate. \\
+\hline
+{\em owner} & is the owner of the piece. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_pieces_1_1_pawn_ae017bf02eaa2725e81b3e090570621ce}\label{class_game_1_1_pieces_1_1_pawn_ae017bf02eaa2725e81b3e090570621ce}} 
+\index{Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}!explore\+\_\+possible\+\_\+positions@{explore\+\_\+possible\+\_\+positions}}
+\index{explore\+\_\+possible\+\_\+positions@{explore\+\_\+possible\+\_\+positions}!Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{explore\+\_\+possible\+\_\+positions()}{explore\_possible\_positions()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{class_game_1_1_location}{Location}$>$ Game.\+Pieces.\+Pawn.\+explore\+\_\+possible\+\_\+positions (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Explores all options for movement from location. 
+\begin{DoxyParams}{Parameters}
+{\em location} & location from where we want to explore. \\
+\hline
+{\em chess\+Board} & is the chess board we are working on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_pieces_1_1_pawn_adf35b286f0743f944785fc916cdea79b}\label{class_game_1_1_pieces_1_1_pawn_adf35b286f0743f944785fc916cdea79b}} 
+\index{Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}!move@{move}}
+\index{move@{move}!Game\+::\+Pieces\+::\+Pawn@{Game\+::\+Pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Game.\+Pieces.\+Pawn.\+move (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_location}{Location}}]{destination,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Move to destination and then set first turn to false. 
+\begin{DoxyParams}{Parameters}
+{\em location} & location from where we want to leave. \\
+\hline
+{\em destination} & location we want to reach. \\
+\hline
+{\em chess\+Board} & is the chess board we are working on. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Game/\+Pieces/Pawn.\+java\end{DoxyCompactItemize}

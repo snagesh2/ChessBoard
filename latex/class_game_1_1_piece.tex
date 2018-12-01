@@ -1,0 +1,184 @@
+\hypertarget{class_game_1_1_piece}{}\section{Game.\+Piece Class Reference}
+\label{class_game_1_1_piece}\index{Game.\+Piece@{Game.\+Piece}}
+Inheritance diagram for Game.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_game_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_1_1_piece_ac7bf4a99bb03a745e9b857c8091c3304}{Piece} ()
+\item 
+boolean \hyperlink{class_game_1_1_piece_a731841b5bb47df461d9de450386e937b}{is\+Out\+Board} (\hyperlink{class_game_1_1_location}{Location} location)
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_af5a0f0900601ca2ba564c58f528e3e1f}\label{class_game_1_1_piece_af5a0f0900601ca2ba564c58f528e3e1f}} 
+Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$ {\bfseries explore\+\_\+possible\+\_\+positions} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a944c18376b6af8bd8d695867a1cb7ea6}\label{class_game_1_1_piece_a944c18376b6af8bd8d695867a1cb7ea6}} 
+\hyperlink{class_game_1_1_location}{Location} {\bfseries get\+\_\+location} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a2bc8c96480246808852708360cad25a1}\label{class_game_1_1_piece_a2bc8c96480246808852708360cad25a1}} 
+String {\bfseries get\+\_\+name} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_ac7d27da23e3311567b6e773c7da17da0}\label{class_game_1_1_piece_ac7d27da23e3311567b6e773c7da17da0}} 
+int {\bfseries get\+Color} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_ac1da8a79281f3cd6fea02044c47a5b03}\label{class_game_1_1_piece_ac1da8a79281f3cd6fea02044c47a5b03}} 
+int {\bfseries get\+Value} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a5a0fcd7f275b131d76312dd58d851dee}\label{class_game_1_1_piece_a5a0fcd7f275b131d76312dd58d851dee}} 
+\hyperlink{class_game_1_1_player}{Player} {\bfseries get\+\_\+owner} ()
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{class_game_1_1_piece_a1edfb33b56e00ac858f1dfe34739c19e}{move} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_location}{Location} destination, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_ab66d90e85bab97d03ddba72d3736ae27}\label{class_game_1_1_piece_ab66d90e85bab97d03ddba72d3736ae27}} 
+boolean {\bfseries can\+Capture} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_location}{Location} destination, Hash\+Map$<$ \hyperlink{class_game_1_1_location}{Location}, \hyperlink{class_game_1_1_piece}{Piece} $>$ board)
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_ac436d4c58f325d6ce7ab1000098a00d1}\label{class_game_1_1_piece_ac436d4c58f325d6ce7ab1000098a00d1}} 
+boolean {\bfseries position\+Occupied} (\hyperlink{class_game_1_1_location}{Location} loc, Hash\+Map$<$ \hyperlink{class_game_1_1_location}{Location}, \hyperlink{class_game_1_1_piece}{Piece} $>$ board)
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{class_game_1_1_piece_acc0658b488de0531c94899ff16f81860}{undo\+Move} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_location}{Location} destination, \hyperlink{class_game_1_1_piece}{Piece} captured\+Piece, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+boolean \hyperlink{class_game_1_1_piece_a8db59115b31d53cfb6e8b31df38f22ab}{can\+Move\+To} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_location}{Location} destination, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_game_1_1_piece_a693ab25eaea3b524fc34ddd0da52576e}{add\+Moves\+In\+Line} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board, Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$ moves, int xi, int yi)
+\item 
+void \hyperlink{class_game_1_1_piece_a66a1001c4c88e92b73575c332c29b01e}{add\+If\+Valid} (\hyperlink{class_game_1_1_location}{Location} location, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board, Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$ moves, int xi, int yi)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a75996931e37b3a17b2638dfa374fd47b}\label{class_game_1_1_piece_a75996931e37b3a17b2638dfa374fd47b}} 
+\hyperlink{class_game_1_1_player}{Player} {\bfseries owner}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a68b7c8cc66bcc4d5e5f44fb300892986}\label{class_game_1_1_piece_a68b7c8cc66bcc4d5e5f44fb300892986}} 
+int {\bfseries color}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a28af46d97aaf22e65132802600c036eb}\label{class_game_1_1_piece_a28af46d97aaf22e65132802600c036eb}} 
+int {\bfseries value} = 0
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_aed829bf40fb2e53850e907721ea9614e}\label{class_game_1_1_piece_aed829bf40fb2e53850e907721ea9614e}} 
+String {\bfseries kind}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a757648998fb60105600446e82ffdc711}\label{class_game_1_1_piece_a757648998fb60105600446e82ffdc711}} 
+Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$ {\bfseries possible\+\_\+positions}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_a3cc8f2b3246e0a8c2801c3215f30ff1c}\label{class_game_1_1_piece_a3cc8f2b3246e0a8c2801c3215f30ff1c}} 
+boolean {\bfseries can\+\_\+move}
+\item 
+\mbox{\Hypertarget{class_game_1_1_piece_ae34b20097d771631ff6bff635d2fde3d}\label{class_game_1_1_piece_ae34b20097d771631ff6bff635d2fde3d}} 
+\hyperlink{class_game_1_1_location}{Location} {\bfseries location}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_piece_ac7bf4a99bb03a745e9b857c8091c3304}\label{class_game_1_1_piece_ac7bf4a99bb03a745e9b857c8091c3304}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{Piece()}{Piece()}}
+{\footnotesize\ttfamily Game.\+Piece.\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for piece, returns an empty piece which can be replaced. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_piece_a66a1001c4c88e92b73575c332c29b01e}\label{class_game_1_1_piece_a66a1001c4c88e92b73575c332c29b01e}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!add\+If\+Valid@{add\+If\+Valid}}
+\index{add\+If\+Valid@{add\+If\+Valid}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{add\+If\+Valid()}{addIfValid()}}
+{\footnotesize\ttfamily void Game.\+Piece.\+add\+If\+Valid (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board,  }\item[{Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$}]{moves,  }\item[{int}]{xi,  }\item[{int}]{yi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds valid moves Valid here means, on board and capturable or unoccupied. 
+\begin{DoxyParams}{Parameters}
+{\em location} & current location. \\
+\hline
+{\em moves} & list to add to. \\
+\hline
+{\em xi} & increment. \\
+\hline
+{\em yi} & increment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_piece_a693ab25eaea3b524fc34ddd0da52576e}\label{class_game_1_1_piece_a693ab25eaea3b524fc34ddd0da52576e}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!add\+Moves\+In\+Line@{add\+Moves\+In\+Line}}
+\index{add\+Moves\+In\+Line@{add\+Moves\+In\+Line}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{add\+Moves\+In\+Line()}{addMovesInLine()}}
+{\footnotesize\ttfamily void Game.\+Piece.\+add\+Moves\+In\+Line (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board,  }\item[{Array\+List$<$ \hyperlink{class_game_1_1_location}{Location} $>$}]{moves,  }\item[{int}]{xi,  }\item[{int}]{yi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Adds valid moves in a straight line. Valid here means, on board and capturable or unoccupied. 
+\begin{DoxyParams}{Parameters}
+{\em location} & current location. \\
+\hline
+{\em moves} & list to add to. \\
+\hline
+{\em xi} & increment. \\
+\hline
+{\em yi} & increment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_piece_a8db59115b31d53cfb6e8b31df38f22ab}\label{class_game_1_1_piece_a8db59115b31d53cfb6e8b31df38f22ab}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!can\+Move\+To@{can\+Move\+To}}
+\index{can\+Move\+To@{can\+Move\+To}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{can\+Move\+To()}{canMoveTo()}}
+{\footnotesize\ttfamily boolean Game.\+Piece.\+can\+Move\+To (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_location}{Location}}]{destination,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if possible to move to destination. 
+\begin{DoxyParams}{Parameters}
+{\em location} & location from where we want to leave. \\
+\hline
+{\em destination} & location we want to reach. \\
+\hline
+{\em chess\+Board} & is the chess board we are working on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_piece_a731841b5bb47df461d9de450386e937b}\label{class_game_1_1_piece_a731841b5bb47df461d9de450386e937b}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!is\+Out\+Board@{is\+Out\+Board}}
+\index{is\+Out\+Board@{is\+Out\+Board}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Out\+Board()}{isOutBoard()}}
+{\footnotesize\ttfamily boolean Game.\+Piece.\+is\+Out\+Board (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if \hyperlink{class_game_1_1_piece}{Piece} is on board. \mbox{\Hypertarget{class_game_1_1_piece_a1edfb33b56e00ac858f1dfe34739c19e}\label{class_game_1_1_piece_a1edfb33b56e00ac858f1dfe34739c19e}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!move@{move}}
+\index{move@{move}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Game.\+Piece.\+move (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_location}{Location}}]{destination,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the move function. It places a piece from 
+\begin{DoxyParams}{Parameters}
+{\em location} & to \\
+\hline
+{\em destination.} & \\
+\hline
+{\em location} & Move from here. \\
+\hline
+{\em destination} & Move to here. \\
+\hline
+{\em chess\+Board} & This the board we play on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_piece_acc0658b488de0531c94899ff16f81860}\label{class_game_1_1_piece_acc0658b488de0531c94899ff16f81860}} 
+\index{Game\+::\+Piece@{Game\+::\+Piece}!undo\+Move@{undo\+Move}}
+\index{undo\+Move@{undo\+Move}!Game\+::\+Piece@{Game\+::\+Piece}}
+\subsubsection{\texorpdfstring{undo\+Move()}{undoMove()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Game.\+Piece.\+undo\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_location}{Location}}]{location,  }\item[{\hyperlink{class_game_1_1_location}{Location}}]{destination,  }\item[{\hyperlink{class_game_1_1_piece}{Piece}}]{captured\+Piece,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the undo move function. 
+\begin{DoxyParams}{Parameters}
+{\em location} & Move from here. \\
+\hline
+{\em destination} & Move to here. \\
+\hline
+{\em captured\+Piece} & This was the piece previously captured. \\
+\hline
+{\em chess\+Board} & This the board we play on \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Game/Piece.\+java\end{DoxyCompactItemize}

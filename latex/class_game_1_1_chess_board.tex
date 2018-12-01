@@ -1,0 +1,184 @@
+\hypertarget{class_game_1_1_chess_board}{}\section{Game.\+Chess\+Board Class Reference}
+\label{class_game_1_1_chess_board}\index{Game.\+Chess\+Board@{Game.\+Chess\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_1_1_chess_board_af03bbcf15fe65eb707758928b92556d7}{Chess\+Board} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a6cd8d8698cb3613f1ea0c6ff12ff2bad}\label{class_game_1_1_chess_board_a6cd8d8698cb3613f1ea0c6ff12ff2bad}} 
+\hyperlink{class_game_1_1_player}{Player} {\bfseries get\+Player\+White} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a7e03a5285b591f072128fe7fc1afcfa0}\label{class_game_1_1_chess_board_a7e03a5285b591f072128fe7fc1afcfa0}} 
+\hyperlink{class_game_1_1_player}{Player} {\bfseries get\+Player\+Black} ()
+\item 
+void \hyperlink{class_game_1_1_chess_board_a56eeb955a8ced4615f314e96e1d0fb0d}{set\+Board\+Afresh} ()
+\item 
+void \hyperlink{class_game_1_1_chess_board_ac47067200b06bc4d11ca660c7a409956}{print\+Board} (Hash\+Map$<$ \hyperlink{class_game_1_1_location}{Location}, \hyperlink{class_game_1_1_piece}{Piece} $>$ board)
+\item 
+void \hyperlink{class_game_1_1_chess_board_abe952ff3498a25cf31170ff416ca6954}{print\+Board\+Print} ()
+\item 
+\hyperlink{class_game_1_1_location}{Location} \hyperlink{class_game_1_1_chess_board_a021ffe2d9253de4c5a59e58c6dd52730}{find\+\_\+location} (int x, int y)
+\item 
+void \hyperlink{class_game_1_1_chess_board_a9ec942366d90c6dca4c1da936e040474}{set\+Up\+Start\+Board} (\hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a3292913ce4081ea271aba5295cafaf41}\label{class_game_1_1_chess_board_a3292913ce4081ea271aba5295cafaf41}} 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\+Board\+Print} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_ac66d60d971579df2d51acfb2796f6bda}\label{class_game_1_1_chess_board_ac66d60d971579df2d51acfb2796f6bda}} 
+Hash\+Map$<$ \hyperlink{class_game_1_1_location}{Location}, \hyperlink{class_game_1_1_piece}{Piece} $>$ {\bfseries get\+Board} ()
+\item 
+boolean \hyperlink{class_game_1_1_chess_board_a79832c1dee410398129a1d2365819836}{checkmated} (\hyperlink{class_game_1_1_player}{Player} player, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+boolean \hyperlink{class_game_1_1_chess_board_a7a2ec0cc1f431ee502561c18a53a80cf}{in\+Stalemate} (\hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+boolean \hyperlink{class_game_1_1_chess_board_a7176cdb726816d1a5ce1aabd01c7f706}{in\+Check} (\hyperlink{class_game_1_1_player}{Player} player, \hyperlink{class_game_1_1_chess_board}{Chess\+Board} chess\+Board)
+\item 
+\hyperlink{class_game_1_1_piece}{Piece} \hyperlink{class_game_1_1_chess_board_af7f79327e5c2e5ed8f60715736e684d2}{get\+King} (\hyperlink{class_game_1_1_player}{Player} player)
+\item 
+\hyperlink{class_game_1_1_player}{Player} \hyperlink{class_game_1_1_chess_board_af26bbaf05bffe9f911e10ad3e2843c6a}{get\+Current\+Player} ()
+\item 
+\hyperlink{class_game_1_1_player}{Player} \hyperlink{class_game_1_1_chess_board_a3d8adea17ddbb65aa9e527e711f80c51}{get\+Other\+Player} (\hyperlink{class_game_1_1_player}{Player} player)
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a379b1fc092ee1ff5a14fac5461ae0112}\label{class_game_1_1_chess_board_a379b1fc092ee1ff5a14fac5461ae0112}} 
+void {\bfseries place\+Piece} (\hyperlink{class_game_1_1_piece}{Piece} piece)
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a61728334465aa8a90a32fe141d67b99d}\label{class_game_1_1_chess_board_a61728334465aa8a90a32fe141d67b99d}} 
+boolean {\bfseries is\+On\+Board} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a14bb6eb4e1b62827762a9089bba60621}\label{class_game_1_1_chess_board_a14bb6eb4e1b62827762a9089bba60621}} 
+int {\bfseries get\+Ranks} ()
+\item 
+\mbox{\Hypertarget{class_game_1_1_chess_board_a32690c9ed46310a3b1cb9321e7e4680b}\label{class_game_1_1_chess_board_a32690c9ed46310a3b1cb9321e7e4680b}} 
+int {\bfseries get\+Files} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_chess_board_af03bbcf15fe65eb707758928b92556d7}\label{class_game_1_1_chess_board_af03bbcf15fe65eb707758928b92556d7}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!Chess\+Board@{Chess\+Board}}
+\index{Chess\+Board@{Chess\+Board}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{Chess\+Board()}{ChessBoard()}}
+{\footnotesize\ttfamily Game.\+Chess\+Board.\+Chess\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \hyperlink{class_game_1_1_chess_board}{Chess\+Board}. Intended for the board data structures and checking if won or not. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_chess_board_a79832c1dee410398129a1d2365819836}\label{class_game_1_1_chess_board_a79832c1dee410398129a1d2365819836}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!checkmated@{checkmated}}
+\index{checkmated@{checkmated}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{checkmated()}{checkmated()}}
+{\footnotesize\ttfamily boolean Game.\+Chess\+Board.\+checkmated (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_player}{Player}}]{player,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether player is check mated. 
+\begin{DoxyParams}{Parameters}
+{\em chess\+Board} & board to check players status on \\
+\hline
+{\em player} & player to check the status of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the player has been checkmated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_chess_board_a021ffe2d9253de4c5a59e58c6dd52730}\label{class_game_1_1_chess_board_a021ffe2d9253de4c5a59e58c6dd52730}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!find\+\_\+location@{find\+\_\+location}}
+\index{find\+\_\+location@{find\+\_\+location}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{find\+\_\+location()}{find\_location()}}
+{\footnotesize\ttfamily \hyperlink{class_game_1_1_location}{Location} Game.\+Chess\+Board.\+find\+\_\+location (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the location given x and y coordinates. 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the x coordinate \\
+\hline
+{\em x} & is the x coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_chess_board_af26bbaf05bffe9f911e10ad3e2843c6a}\label{class_game_1_1_chess_board_af26bbaf05bffe9f911e10ad3e2843c6a}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!get\+Current\+Player@{get\+Current\+Player}}
+\index{get\+Current\+Player@{get\+Current\+Player}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{get\+Current\+Player()}{getCurrentPlayer()}}
+{\footnotesize\ttfamily \hyperlink{class_game_1_1_player}{Player} Game.\+Chess\+Board.\+get\+Current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns current player \mbox{\Hypertarget{class_game_1_1_chess_board_af7f79327e5c2e5ed8f60715736e684d2}\label{class_game_1_1_chess_board_af7f79327e5c2e5ed8f60715736e684d2}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!get\+King@{get\+King}}
+\index{get\+King@{get\+King}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{get\+King()}{getKing()}}
+{\footnotesize\ttfamily \hyperlink{class_game_1_1_piece}{Piece} Game.\+Chess\+Board.\+get\+King (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_player}{Player}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets king piece 
+\begin{DoxyParams}{Parameters}
+{\em player} & player to check the status of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+King piece of player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_chess_board_a3d8adea17ddbb65aa9e527e711f80c51}\label{class_game_1_1_chess_board_a3d8adea17ddbb65aa9e527e711f80c51}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!get\+Other\+Player@{get\+Other\+Player}}
+\index{get\+Other\+Player@{get\+Other\+Player}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{get\+Other\+Player()}{getOtherPlayer()}}
+{\footnotesize\ttfamily \hyperlink{class_game_1_1_player}{Player} Game.\+Chess\+Board.\+get\+Other\+Player (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_player}{Player}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the other player \mbox{\Hypertarget{class_game_1_1_chess_board_a7176cdb726816d1a5ce1aabd01c7f706}\label{class_game_1_1_chess_board_a7176cdb726816d1a5ce1aabd01c7f706}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!in\+Check@{in\+Check}}
+\index{in\+Check@{in\+Check}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{in\+Check()}{inCheck()}}
+{\footnotesize\ttfamily boolean Game.\+Chess\+Board.\+in\+Check (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_player}{Player}}]{player,  }\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether player is in check. 
+\begin{DoxyParams}{Parameters}
+{\em chess\+Board} & board to check players status on \\
+\hline
+{\em player} & player to check the status of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the player is in check. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_chess_board_a7a2ec0cc1f431ee502561c18a53a80cf}\label{class_game_1_1_chess_board_a7a2ec0cc1f431ee502561c18a53a80cf}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!in\+Stalemate@{in\+Stalemate}}
+\index{in\+Stalemate@{in\+Stalemate}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{in\+Stalemate()}{inStalemate()}}
+{\footnotesize\ttfamily boolean Game.\+Chess\+Board.\+in\+Stalemate (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the player who\textquotesingle{}s turn it currently is is not in check and cannot move, return true 
+\begin{DoxyParams}{Parameters}
+{\em chess\+Board} & board to check players status on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+is the game in stalemate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_1_1_chess_board_ac47067200b06bc4d11ca660c7a409956}\label{class_game_1_1_chess_board_ac47067200b06bc4d11ca660c7a409956}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{print\+Board()}{printBoard()}}
+{\footnotesize\ttfamily void Game.\+Chess\+Board.\+print\+Board (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ \hyperlink{class_game_1_1_location}{Location}, \hyperlink{class_game_1_1_piece}{Piece} $>$}]{board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints the board with data structure Hash\+Map$<$\+Location, Piece$>$ board. 
+\begin{DoxyParams}{Parameters}
+{\em board} & the data structure which contains pieces at certain locations. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_1_1_chess_board_abe952ff3498a25cf31170ff416ca6954}\label{class_game_1_1_chess_board_abe952ff3498a25cf31170ff416ca6954}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!print\+Board\+Print@{print\+Board\+Print}}
+\index{print\+Board\+Print@{print\+Board\+Print}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{print\+Board\+Print()}{printBoardPrint()}}
+{\footnotesize\ttfamily void Game.\+Chess\+Board.\+print\+Board\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints the board with data structure int\mbox{[}\mbox{]}\mbox{[}\mbox{]} board. \mbox{\Hypertarget{class_game_1_1_chess_board_a56eeb955a8ced4615f314e96e1d0fb0d}\label{class_game_1_1_chess_board_a56eeb955a8ced4615f314e96e1d0fb0d}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!set\+Board\+Afresh@{set\+Board\+Afresh}}
+\index{set\+Board\+Afresh@{set\+Board\+Afresh}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{set\+Board\+Afresh()}{setBoardAfresh()}}
+{\footnotesize\ttfamily void Game.\+Chess\+Board.\+set\+Board\+Afresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the board up, Empty. \mbox{\Hypertarget{class_game_1_1_chess_board_a9ec942366d90c6dca4c1da936e040474}\label{class_game_1_1_chess_board_a9ec942366d90c6dca4c1da936e040474}} 
+\index{Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}!set\+Up\+Start\+Board@{set\+Up\+Start\+Board}}
+\index{set\+Up\+Start\+Board@{set\+Up\+Start\+Board}!Game\+::\+Chess\+Board@{Game\+::\+Chess\+Board}}
+\subsubsection{\texorpdfstring{set\+Up\+Start\+Board()}{setUpStartBoard()}}
+{\footnotesize\ttfamily void Game.\+Chess\+Board.\+set\+Up\+Start\+Board (\begin{DoxyParamCaption}\item[{\hyperlink{class_game_1_1_chess_board}{Chess\+Board}}]{chess\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the board up to the initial board set up, with all data structures full of . 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Game/Chess\+Board.\+java\end{DoxyCompactItemize}
